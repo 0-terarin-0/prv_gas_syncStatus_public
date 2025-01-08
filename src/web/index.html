@@ -13,7 +13,7 @@
         />
         <link rel="stylesheet" href="./main.css" />
         <script src="./assets/grid/grid.js"></script>
-        <script src="./show_restaurant.js"></script>
+        <script src="./show.js"></script>
     </head>
     <body id="body" class="px-5 bg-black py-2">
         <div style="width: 100%; display: flex; flex-direction: row-reverse">
@@ -23,7 +23,7 @@
         </div>
         <div class="w-100 h-100 d-flex flex-column justify-content-center">
             <p class="text-start" style="font-size: 42px; margin-bottom: 100px">
-                現在進行中の演目（レストラン）
+                現在進行中の演目
             </p>
 
             <p id="test" class="text-center" style="font-size: 120px">
@@ -40,16 +40,13 @@
                     保護者の方はご入場いただけません。</mark
                 >
             </p>
-            <p class="text-center" style="font-size: 36px; visibility: hidden">
-                左のQRコードよりプログラムをご覧いただけます。
-            </p>
         </div>
         <script>
             function reload() {
-                window.location.href = "./index_arena.html";
+                windows.reload();
             }
             window.addEventListener("load", function () {
-                setTimeout(reload, 45000);
+                setTimeout(reload, 15000);
             });
         </script>
     </body>
