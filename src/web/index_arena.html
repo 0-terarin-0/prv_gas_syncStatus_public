@@ -1,0 +1,59 @@
+<!doctype html>
+<html style="height: 100vh; width: 100wh">
+    <head>
+        <meta charset="utf-8" />
+        <link
+            rel="stylesheet"
+            href="./assets/bootstrap/css/bootstrap.css"
+            type="text/css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/bootstrap-icons/font/bootstrap-icons.css"
+        />
+        <link rel="stylesheet" href="./main.css" />
+        <script src="./assets/grid/grid.js"></script>
+        <script src="./show_arena.js"></script>
+    </head>
+    <body id="body" class="px-5 bg-black py-2">
+        <div style="width: 100%; display: flex; flex-direction: row-reverse">
+            <div style="height: 250px; width: 250px">
+                <img src="./assets/logo.png" height="100%" />
+            </div>
+        </div>
+        <div class="w-100 h-100 d-flex flex-column justify-content-center">
+            <p class="text-start" style="font-size: 42px; margin-bottom: 100px">
+                現在進行中の演目（アリーナ）
+            </p>
+
+            <p id="test" class="text-center" style="font-size: 120px">
+                Loading
+            </p>
+
+            <p
+                class="text-center blinking text-danger"
+                style="font-size: 48px; visibility: hidden"
+                id="enterCheck"
+            >
+                <mark class="text-danger"
+                    ><i class="bi bi-exclamation-triangle"></i>
+                    保護者の方はご入場いただけません。</mark
+                >
+            </p>
+            <!--
+            <p class="text-center" style="font-size: 36px; visibility: hidden">
+                左のQRコードよりプログラムをご覧いただけます。
+            </p>
+            -->
+        </div>
+        <script>
+            function reload() {
+                //window.location.href = "./index_restaurant.html";
+                windows.reload();
+            }
+            window.addEventListener("load", function () {
+                setTimeout(reload, 15000);
+            });
+        </script>
+    </body>
+</html>

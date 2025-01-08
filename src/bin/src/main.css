@@ -1,0 +1,60 @@
+p {
+    color: #fff;
+  }
+
+  .blinking {
+    -webkit-animation: blink 1.6s ease-in-out infinite alternate;
+    -moz-animation: blink 1.6s ease-in-out infinite alternate;
+    animation: blink s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+.grid-td{
+    color: white ;
+    text-align: center ;
+    border: 1px solid #fff;
+    
+}
+
+.grid-table{
+    color: white;
+    text-align: center;
+    border: 1px solid #fff;
+    font-size:24px;
+    margin-top:12px;
+}
+
+.grid-th{
+    color: white;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.gridjs-wrapper{
+    overflow: scroll;
+}
+
